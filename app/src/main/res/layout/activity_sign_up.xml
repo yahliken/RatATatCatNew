@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
+    tools:context=".activities.SignUpActivity"
     android:orientation="vertical"
     android:background="@drawable/background2">
 
@@ -37,7 +37,7 @@
                 android:hint="Enter username"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:id="@+id/etUsernameS"
+                android:id="@+id/etUserNameS"
                 android:textColor="@color/black"></EditText>
 
             <EditText
@@ -47,6 +47,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:id="@+id/etPasswordS"
+                android:inputType="textPassword"
                 android:textColor="@color/black"></EditText>
 
             <EditText
@@ -56,6 +57,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:id="@+id/etPasswordVerification"
+                android:inputType="textPassword"
                 android:textColor="@color/black"></EditText>
 
             <Button
@@ -104,7 +106,7 @@
                 android:hint="Enter username"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:id="@+id/etUsernameL"
+                android:id="@+id/etUserNameL"
                 android:textColor="@color/black"></EditText>
 
             <EditText
@@ -114,6 +116,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:id="@+id/etPasswordL"
+                android:inputType="textPassword"
                 android:textColor="@color/black"></EditText>
 
             <Button
