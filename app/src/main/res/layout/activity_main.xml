@@ -5,23 +5,51 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/background"
-        android:scaleType="centerCrop"></ImageView>
+    tools:context=".MainActivity"
+    android:background="@drawable/home_background">
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:text="Play"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textColor="#5D001E"
-        android:backgroundTint="#D6C54164"
-        android:gravity="center"
+        android:backgroundTint="#D6EF90A8"
         android:layout_gravity="center"
+        android:layout_marginLeft="145dp"
         android:id="@+id/btnPlay"></Button>
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:text="Join game"
+        android:textSize="30dp"
+        android:textColor="#5D001E"
+        android:backgroundTint="#D6EF90A8"
+        android:layout_marginLeft="-170dp"
+        android:layout_marginTop="400dp"
+        android:id="@+id/btnJoin"></Button>
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:text="Instructions"
+        android:textSize="30dp"
+        android:textColor="#5D001E"
+        android:backgroundTint="#D6EF90A8"
+        android:layout_marginLeft="-215dp"
+        android:layout_marginTop="470dp"
+        android:id="@+id/btnInstructions"></Button>
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:text="Sign up"
+        android:textSize="30dp"
+        android:textColor="#5D001E"
+        android:backgroundTint="#D6EF90A8"
+        android:layout_marginLeft="-215dp"
+        android:layout_marginTop="540dp"
+        android:id="@+id/btnSignUp"></Button>
 
 </LinearLayout>
