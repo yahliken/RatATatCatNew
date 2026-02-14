@@ -3,6 +3,7 @@ package com.example.ratatatcat;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
@@ -16,6 +17,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private ViewFlipper viewFlipper;
     private TextView tvSwitchToLogIn, tvSwitchToSignUp;
+    private Button btnSignUp, btnLogIn;
+
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         tvSwitchToSignUp = findViewById(R.id.tvSwitchToSignUp);
         tvSwitchToSignUp.setOnClickListener(this);
+
+        btnSignUp = findViewById(R.id.btnSignUp);
+        btnSignUp.setOnClickListener(this);
+
+        btnLogIn = findViewById(R.id.btnLogIn);
+        btnLogIn.setOnClickListener(this);
     }
 
     @Override
@@ -40,5 +51,19 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         else if (view == tvSwitchToSignUp){
             viewFlipper.showPrevious();
         }
+        else if(view == btnSignUp){
+            boolean result = signUp();
+        }
+        else if(view == btnLogIn){
+            boolean result = logIn();
+        }
+    }
+
+    private boolean logIn() {
+        return false;
+    }
+
+    private boolean signUp() {
+        return false;
     }
 }
