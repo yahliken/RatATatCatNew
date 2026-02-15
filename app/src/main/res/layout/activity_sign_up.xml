@@ -79,6 +79,7 @@
                 android:textColor="#1C40FF"
                 android:gravity="center"
                 android:layout_marginTop="20dp"
+                android:textStyle="italic"
                 android:id="@+id/tvSwitchToLogIn"></TextView>
 
         </LinearLayout>
@@ -138,6 +139,7 @@
                 android:textColor="#1C40FF"
                 android:gravity="center"
                 android:layout_marginTop="20dp"
+                android:textStyle="italic"
                 android:id="@+id/tvSwitchToSignUp"></TextView>
         </LinearLayout>
 
