@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
 
+import com.example.ratatatcat.BuildConfig;
 import com.google.ai.client.generativeai.GenerativeModel;
 import com.google.ai.client.generativeai.type.Content;
 import com.google.ai.client.generativeai.type.GenerateContentResponse;
@@ -20,7 +21,7 @@ import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.EmptyCoroutineContext;
 
 public class GeminiManager {
-    public static final String API_KEY = "AIzaSyCHyta_9YvU98gFyu4HsNg_Pt5kk7ize8g";
+    public static final String API_KEY = BuildConfig.GEMINI_API_KEY;
     private static GeminiManager instance;
     private  GenerativeModel gemini;
 
