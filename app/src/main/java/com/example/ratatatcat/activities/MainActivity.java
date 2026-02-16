@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.ratatatcat.InstructionsActivity;
 import com.example.ratatatcat.R;
 import com.example.ratatatcat.helpers.UserDetails;
 
@@ -63,6 +64,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if(view == btnSignUp){
             Intent i = new Intent(this, SignUpActivity.class);
+            startActivity(i);
+        }
+        else if(view == btnInstructions){
+            Intent i = new Intent(this, InstructionsActivity.class);
             startActivity(i);
         }
         }
