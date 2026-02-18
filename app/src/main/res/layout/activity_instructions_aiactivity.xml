@@ -25,6 +25,7 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:textSize="20dp"
+        android:gravity="top"
         android:background="#FFEEEE"
         android:hint="Enter your question here_"
         android:id="@+id/etQuestion"></EditText>
@@ -42,13 +43,13 @@
         android:layout_marginTop="15dp"></Button>
 
     <TextView
+        android:id="@+id/tvAnswer"
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:hint="Cat answer_"
-        android:textSize="20dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:id="@+id/tvAnswer"></TextView>
+        android:hint="Cat answer_"
+        android:textSize="20dp"></TextView>
 
     <Button
         android:layout_width="60dp"
